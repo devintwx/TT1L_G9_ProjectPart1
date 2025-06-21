@@ -818,42 +818,41 @@ The following packaging and security instructions **are part of the deployment r
 | VS-01 | 17/6/2025; 11am-1pm | Inspection | 1.1, 1.2, 1.3, 1.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
 | VS-02 | 18/6/2025; 12pm-2pm | Inspection | 3.1, 3.2, 3.3, 3.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
 | VS-03 | 19/6/2025; 1pm-2.30pm | Inspection | 3.5, 3.6, 3.7, 3.8 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
-| VS-04 | 20/6/2025; 3pm-5pm | Inspection | 4.1, 4.2, 4.3, 4.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
-| VS-05 | 21/6/2025; 12pm-2pm | Inspection | 4.5, 5.1, 5.2, 5.3 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
+| VS-04 | 20/6/2025; 3pm-5pm | Inspection | 4.1, 4.2, 4.3, 4.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 2   |
+| VS-05 | 21/6/2025; 12pm-2pm | Inspection | 4.5, 5.1, 5.2, 5.3 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 1   |
 
 ### **3.8.6 Defect Summary**
 
 **A. Content Defect**
 
-| **Req ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| **CD ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| REQ-001 | Missing acceptance criteria | Alice | Define measurable outcomes | VS-01 | 4   |
-| REQ-004 | “Fast” not defined | Ben | ≤ 2s response time | VS-01 | 3   |
+| CD-01 | Incorrect feature | Liew Wei Hong | Replace to a suitable feature | VS-04 | 4   |
 
 **B. Documentation Defect**
 
 | **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| Pg 13 | Outdated policy reference | Chen | Replace with Policy 102 | VS-02 | 2   |
-| Pg 5, 10, 16, 30, 45, 58 | Formatting errors - not following ISO/IEC/.... |     |     |     |     |
+| Pg 51 | Duplication of title | Liew Wei Hong | Replace duplicated title | VS-04 | 3   |
+| Pg 72, Pg 73, Pg 74 | Inconsistent typography | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
 
 **C. Agreement Defect**
 
-| **Req ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
+| **AD ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| REQ-012 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
+| e.g. AD-01 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
 
 ### **3.8.7 Conflict Analysis**
 
 | **Conflict ID** | **Conflict Description** | **Conflict Analysis** | **Stakeholders Involved** | **Session ID** |
 | --- | --- | --- | --- | --- |
-| CF-01 | Performance vs cost tradeoff | Interest conflict - the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and speed, whereas PO is driven by budget constraints. This reflects a strategic misalignment that, if unresolved, could delay delivery or compromise quality. | PO, QA, Dev Team | VS-01 |
+| e.g. CF-01 | Performance vs cost tradeoff | Interest conflict - the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and speed, whereas PO is driven by budget constraints. This reflects a strategic misalignment that, if unresolved, could delay delivery or compromise quality. | PO, QA, Dev Team | VS-01 |
 
 ### **3.8.8 Conflict Analysis and Resolution**
 
 | **Conflict ID** | **Conflict Resolution Strategy** | **Resolved (Y/N)** | **Outcome (If Resolved)** | **Justification** |
 | --- | --- | --- | --- | --- |
-| CF-01 | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. A consensus was built by demonstrating long-term ROI of better performance. | Y   | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
+| e.g. CF-01 | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. A consensus was built by demonstrating long-term ROI of better performance. | Y   | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
 
 ### **3.8.9 Change Log**
 
@@ -864,10 +863,10 @@ The following packaging and security instructions **are part of the deployment r
 
 ### #**3.8.10 Requirements Traceability Matrix**
 
-| **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1-4)** |
+| **RTM ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1-4)** |
 | --- | --- | --- | --- | --- | --- |
-| REQ-001 | System shall respond <2s | G1  | F1  | UC-01 | 4   |
-| REQ-004 | Real-time notifications | G2  | F3  | UC-04 | 3   |
+| RTM-01 | Scalability Requirements | G1  | F1  | UC-01 | 1   |
+| RTM-02 | Availability Requirements | G1  | F1  | UC-01 | 1   |
 
 ### **3.8.11 Role in Requirements Validation, Negotiation & Management**
 
