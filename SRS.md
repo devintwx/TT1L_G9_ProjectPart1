@@ -828,7 +828,8 @@ The following packaging and security instructions **are part of the deployment r
 | **CD ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
 | CD-01 | Incorrect feature | Liew Wei Hong | Replace to a suitable feature | VS-04 | 4   |
-| CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3
+| CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3 |
+| CD-03 | Inconsistency between Use Case and Sequence Diagrams for “Monitor Attendance”: only Event Organizer shown in Sequence Diagram | Ng Kean Ping | 	Include all relevant actors (Student, Admin) in the Sequence Diagram | VS-02 | 4 |
 
 **B. Documentation Defect**
 
