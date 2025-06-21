@@ -828,6 +828,7 @@ The following packaging and security instructions **are part of the deployment r
 | **CD ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
 | CD-01 | Incorrect feature | Liew Wei Hong | Replace to a suitable feature | VS-04 | 4   |
+| CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3
 
 **B. Documentation Defect**
 
@@ -835,7 +836,7 @@ The following packaging and security instructions **are part of the deployment r
 | --- | --- | --- | --- | --- | --- |
 | Pg 51 | Duplication of title | Liew Wei Hong | Replace duplicated title | VS-04 | 3   |
 | Pg 72, Pg 73, Pg 74 | Inconsistent typography | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
-| Pg 10 | Use Case Diagram wrongly placed in Section 1.3 | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements | VS-01 | 1 |
+| Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
 
 **C. Agreement Defect**
 
