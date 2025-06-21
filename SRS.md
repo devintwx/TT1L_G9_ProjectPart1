@@ -835,6 +835,7 @@ The following packaging and security instructions **are part of the deployment r
 | --- | --- | --- | --- | --- | --- |
 | Pg 51 | Duplication of title | Liew Wei Hong | Replace duplicated title | VS-04 | 3   |
 | Pg 72, Pg 73, Pg 74 | Inconsistent typography | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
+| Pg 10 | Use Case Diagram wrongly placed in Section 1.3 | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements | VS-01 | 1 |
 
 **C. Agreement Defect**
 
