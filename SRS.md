@@ -815,8 +815,11 @@ The following packaging and security instructions **are part of the deployment r
 
 | **Session ID** | **Date and Time** | **Technique** | **Section Reviewed** | **Participant & Role** | **No. of Defect** |
 | --- | --- | --- | --- | --- | --- |
-| VS-01 | 2/6/2025; 10am-2pm | Inspection | 2.1, 3.2, 3.3 | Alice (Inspector, Organizer), Ben (Inspector), Chen (Inspector, Moderator) | 7   |
-| VS-02 | 3/6/2025; 2pm-6pm | Inspection | 3.4, 3.5 | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5   |
+| VS-01 | 17/6/2025; 11am-1pm | Inspection | 1.1, 1.2, 1.3, 1.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
+| VS-02 | 18/6/2025; 12pm-2pm | Inspection | 3.1, 3.2, 3.3, 3.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
+| VS-03 | 19/6/2025; 1pm-2.30pm | Inspection | 3.5, 3.6, 3.7, 3.8 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
+| VS-04 | 20/6/2025; 3pm-5pm | Inspection | 4.1, 4.2, 4.3, 4.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
+| VS-05 | 21/6/2025; 12pm-2pm | Inspection | 4.5, 5.1, 5.2, 5.3 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
 
 ### **3.8.6 Defect Summary**
 
@@ -870,10 +873,10 @@ The following packaging and security instructions **are part of the deployment r
 
 | **Student Name** | **Primary Responsibility** | **No. of Session Participated** |
 | --- | --- | --- |
-| Alice | Content validation, traceability matrix updates | 2   |
-| Ben | GitHub version control, changelog maintenance, conflict logging | 2   |
-| Chen | Conflict analysis, stakeholder concern tracking | 2   |
-| Dana | Documentation review, defect classification | 1   |
+| Tang Wei Xiong | GitHub repository setup, system design documentation, version tracking, merge conflict resolution | 5   |
+| Liew Wei Hong |  Verification planning, requirements elicitation, stakeholder interview summaries | 5   |
+| Ng Kean Ping | Use case modeling, change log updates, final document formatting | 5   |
+| Chan Mei Yi | ERD diagram review, context diagram creation, consistency checking | 5   |
 
 ### **3.8.12 Version Control & Configuration Summary**
 
@@ -883,15 +886,15 @@ The following packaging and security instructions **are part of the deployment r
 
 SRS.md: Working version of updated SRS
 
-TTXL_GX_SRS.doc: Final version
+TT1L_G9_SRS.doc: Final version
 
 changelog.md: Record of all requirement-related changes
 
-**Commits Made by StudentX:** XX
+**Commits Made by:** Tang Wei Xiong
 
-**Pull Requests Merged by StudentX:** XX
+**Pull Requests Merged by:** Tang Wei Xiong
 
-**Change Log Entries Made by StudentX:** XX
+**Change Log Entries Made by:** Tang Wei Xiong
 
 # **4 Verification**
 
