@@ -922,7 +922,7 @@ To verify the elicited requirements, each item was assessed based on three crite
 | Requirement | Source | Verification Method | Verified Evidence | Kano Category |
 | --- | --- | --- | --- | --- |
 | Student ID Login (SSO) | Interview | User feedback confirms preference for university credentials | Interview & GitHub | Must-Have |
-| QR Code Check-In | Interview, Observation | Verified by student responses and implemented in CU-Events system |  | Performance |
+| QR Code Check-In | Interview, Observation | Verified by student responses and implemented in CU-Events system | Interview, Article 01 | Performance |
 | Email Confirmation | Interview | Cited as essential for transparency and trust | Interview | Must-Have |
 | Calendar Sync/Reminders | Interview | Students reported better attendance with reminders | Interview | Delighter |
 | Autofill via SIS | Interview | Reduced data entry fatigue; enhances usability | Interview | Must-Have |
