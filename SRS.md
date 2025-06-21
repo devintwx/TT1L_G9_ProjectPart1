@@ -1281,6 +1281,88 @@ deployment requirements**:
   university's internal software policy and must not be shared with
   third-party vendors without prior authorization.
 
+  **3.8.5 Validation Session**
+
+| **Session ID** | **Date and Time** | **Technique** | **Section Reviewed** | **Participant & Role** | **No. of Defect** |
+| --- | --- | --- | --- | --- | --- |
+| VS-01 | 2/6/2025; 10am-2pm | Inspection | 2.1, 3.2, 3.3 | Alice (Inspector, Organizer), Ben (Inspector), Chen (Inspector, Moderator) | 7   |
+| VS-02 | 3/6/2025; 2pm-6pm | Inspection | 3.4, 3.5 | Chen (Inspector), Dana (Author), Ben (Presenter), Alice (Inspector) | 5   |
+
+**3.8.6 Defect Summary**
+
+**A. Content Defect**
+
+| **Req ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| --- | --- | --- | --- | --- | --- |
+| REQ-001 | Missing acceptance criteria | Alice | Define measurable outcomes | VS-01 | 4   |
+| REQ-004 | “Fast” not defined | Ben | ≤ 2s response time | VS-01 | 3   |
+
+**B. Documentation Defect**
+
+| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| --- | --- | --- | --- | --- | --- |
+| Pg 13 | Outdated policy reference | Chen | Replace with Policy 102 | VS-02 | 2   |
+| Pg 5, 10, 16, 30, 45, 58 | Formatting errors - not following ISO/IEC/.... |     |     |     |     |
+
+**C. Agreement Defect**
+
+| **Req ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
+| --- | --- | --- | --- | --- | --- |
+| REQ-012 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
+
+**3.8.7 Conflict Analysis**
+
+| **Conflict ID** | **Conflict Description** | **Conflict Analysis** | **Stakeholders Involved** | **Session ID** |
+| --- | --- | --- | --- | --- |
+| CF-01 | Performance vs cost tradeoff | Interest conflict - the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and speed, whereas PO is driven by budget constraints. This reflects a strategic misalignment that, if unresolved, could delay delivery or compromise quality. | PO, QA, Dev Team | VS-01 |
+
+**3.8.8 Conflict Analysis and Resolution**
+
+| **Conflict ID** | **Conflict Resolution Strategy** | **Resolved (Y/N)** | **Outcome (If Resolved)** | **Justification** |
+| --- | --- | --- | --- | --- |
+| CF-01 | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. A consensus was built by demonstrating long-term ROI of better performance. | Y   | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
+
+**3.8.9 Change Log**
+
+| **Change ID** | **Req ID(s)** | **Summary of Change** | **Proposed By** | **Date** | **Session ID** |
+| --- | --- | --- | --- | --- | --- |
+| CH-01 | REQ-001 | Added acceptance criteria | Alice | dd-mm-yyyy | VS-01 |
+| CH-02 | REQ-012 | Adjusted uptime expectation | Ben | dd-mm-yyyy | VS-02 |
+
+**3.8.10 Requirements Traceability Matrix**
+
+| **Req ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1-4)** |
+| --- | --- | --- | --- | --- | --- |
+| REQ-001 | System shall respond <2s | G1  | F1  | UC-01 | 4   |
+| REQ-004 | Real-time notifications | G2  | F3  | UC-04 | 3   |
+
+**3.8.11 Role in Requirements Validation, Negotiation and Management**
+
+| **Student Name** | **Primary Responsibility** | **No. of Session Participated** |
+| --- | --- | --- |
+| Alice | Content validation, traceability matrix updates | 2   |
+| Ben | GitHub version control, changelog maintenance, conflict logging | 2   |
+| Chen | Conflict analysis, stakeholder concern tracking | 2   |
+| Dana | Documentation review, defect classification | 1   |
+
+**3.8.12 Version Control and Configuration Summary**
+
+**Repository Branch:** project-part-2
+
+**Key Files:**
+
+SRS.md: Working version of updated SRS
+
+TTXL_GX_SRS.doc: Final version
+
+changelog.md: Record of all requirement-related changes
+
+**Commits Made by StudentX:** XX
+
+**Pull Requests Merged by StudentX:** XX
+
+**Change Log Entries Made by StudentX:** XX
+
 # **Verification**
 
 1.  []{#_Toc198769311 .anchor}**Verification Approach**
