@@ -955,7 +955,7 @@ Roles: Student
 | 7\. Do you prefer paying for events through UPI, credit/debit card, or e-wallets? | Integrated Payment Gateway | Mobile-friendly payments are essential for students. | Performance |
 | 8\. Would it be useful to view your past event attendance in your profile? | Event History Log | Tracking participation helps students manage involvement. | Delighter |
 | 9\. How would you feel if check-in failed due to internet issues at the venue? | Offline Check-In Mode | Offline functionality is expected for reliability. | Must-Have |
-| 10\. Would personalize event suggestions based on your interests improve your experience? | Offline Check-In Mode | Not expected but would increase engagement. | Delighter |
+| 10\. Would personalize event suggestions based on your interests improve your experience? | Personalized Event Recommendations | Not expected but would increase engagement. | Delighter |
 
 **Outcomes:**
 
