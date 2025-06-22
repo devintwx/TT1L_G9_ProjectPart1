@@ -828,6 +828,7 @@ The following packaging and security instructions **are part of the deployment r
 | CD-03 | Use case diagram and sequence diagram were not aligned (e.g., missing or inconsistent actions) | Ng Kean Ping | 	Ensure all use cases shown in the diagram are supported by a corresponding sequence diagram. Update diagrams for consistency. | VS-02 | 3 |
 | CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
 | CD-05 | Product function explanation does not align with related use cases (e.g., missing or differently described functions). | Ng Kean Ping | Revise the product function section to ensure it matches the use case steps and descriptions clearly. | VS-01 | 4 |
+| CD-06 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-01 | 3 |
 
 **B. Documentation Defect**
 
@@ -839,7 +840,8 @@ The following packaging and security instructions **are part of the deployment r
 | DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
 | DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
 | DD-06 | Pg 41, Pg42 | Sections 3.5.2 (Relationships) and 3.5.3 (Constraints) do not align with the updated data entities in 3.5.1. | Ng Kean Ping | Revise 3.5.2 and 3.5.3 to match the latest 3.5.1 Key Data Entities and include accurate relationships and constraints. | VS-03 | 4 |
-| DD-07 | Pg 8 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-01 | 3 |
+| DD-07 | Pg 28 | Inconsistent function summary table: missing functions and mismatched naming compared to sequence diagrams | Chan Mei Yi | Revise function summary table to align with all existing sequence diagrams and ensure accuracy of function names. | VS-02 | 3 |
+
 
 **C. Agreement Defect**
 
@@ -869,8 +871,9 @@ The following packaging and security instructions **are part of the deployment r
 | CH-04 | DD-06 | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | Ng Kean Ping | 22/6/2025; 7.54pm | VS-03 |
 | CH-05 | CD-03 | Updated use case and sequence diagrams to align with each other; resolved inconsistency between described system flow and visual representation. | Ng Kean Ping | 22/6/2025; 9.06pm | VS-03 |
 | CH-06 | DD-01 | Changed the title of section 4.3 to 'Verification of Elicitation Methods' | Liew Wei Hong | 22/6/2025; 9.31pm | VS-04 |
-| CH-07 | DD-07 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows. | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-06 |
+| CH-07 | CD-06 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-01 |
 | CH-08 | DD-02 | Removed the bold text of 'Full Term' column in table 5.2 | Liew Wei Hong | 22/6/2025; 12.40pm | VS-05 |
+| CH-09 | DD-07 | Revised actor-function summary table to match available sequence diagrams | Chan Mei Yi	 | 23/6/2025; 1.46am | VS-02 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
