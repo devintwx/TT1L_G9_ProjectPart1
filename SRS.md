@@ -354,24 +354,24 @@ Event Organizers are responsible for creating events, monitoring attendance, and
 
 #### **3.1.3.1 Monitor Attendance**
 
-**Function**: Allows event organizers and admins to see real-time attendance during events. Students can view their check-in status and past attendance records.
-**Explanation**: Organizers and admins can track who has checked in as the event happens. Students can confirm their check-in and review their attendance history.
+- **Function**: Allows event organizers and admins to see real-time attendance during events. Students can view their check-in status and past attendance records.
+- **Explanation**: Organizers and admins can track who has checked in as the event happens. Students can confirm their check-in and review their attendance history.
 
 ![image](https://github.com/user-attachments/assets/3533e653-5f9a-41fa-b877-a4143d3a7776)
 #### **3.1.3.1 Monitor Attendance sequence diagram**
 
 #### **3.1.3.2 Generate payment receipt**
 
-**Function**: Allows Event Organizers to generate a payment receipt for a participant based on completed payment records.
-**Explanation**: Event Organizers can access payment records and select a transaction to generate a receipt. The system retrieves the payment details from the database and creates a downloadable or viewable receipt. This helps organizers provide official proof of payment for participants and maintain accurate financial records.
+- **Function**: Allows Event Organizers to generate a payment receipt for a participant based on completed payment records.
+- **Explanation**: Event Organizers can access payment records and select a transaction to generate a receipt. The system retrieves the payment details from the database and creates a downloadable or viewable receipt. This helps organizers provide official proof of payment for participants and maintain accurate financial records.
 
 ![image](https://github.com/user-attachments/assets/5da72cf2-05e2-4170-8428-8c937d076710)
 #### **3.1.3.2 Generate payment receipt sequence diagram**
 
 #### **3.1.3.3 Manage events**
 
-**Function**: Allows Event Organizers to create, edit, and delete events in the system through the dashboard.
-**Explanation**: Organizers can add new event details, make changes to existing events (such as updating the date, time, or location), or remove events that are no longer needed.
+- **Function**: Allows Event Organizers to create, edit, and delete events in the system through the dashboard.
+- **Explanation**: Organizers can add new event details, make changes to existing events (such as updating the date, time, or location), or remove events that are no longer needed.
 
 ![image](https://github.com/user-attachments/assets/38182de9-f6ea-4b08-bb33-90bf552b0cc1)
 #### **3.1.3.3 Manage events sequence diagram**
@@ -406,8 +406,8 @@ Administrators manage the system backend, reporting, and user roles. Administrat
 
 #### **3.1.4.1 Manage user access**
 
-**Function**: Allow administrator to manage user accounts, including viewing, creating, editing, and deleting users.
-**Explanation**: Admins can oversee the user database by adding new users, updating user roles or details, and removing inactive or unauthorized accounts.
+- **Function**: Allow administrator to manage user accounts, including viewing, creating, editing, and deleting users.
+- **Explanation**: Admins can oversee the user database by adding new users, updating user roles or details, and removing inactive or unauthorized accounts.
 
 ![3 1 3 2](https://github.com/user-attachments/assets/d810cabb-aef2-446a-b36d-a4a7d130be5c)
 #### **3.1.4.1 Manage user access sequence diagram**
