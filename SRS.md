@@ -246,28 +246,7 @@ The Campus Event Check-in System is a web-based application that operates throug
 
 #### **1.3.1.1 Context Diagram**
 
-### **1.3.2 Product functions**
-
-The Campus Event Check-in System provides the following primary functions:
-
-- **Student Check-in:** Students can check in to campus events by scanning or entering their Student ID. This verifies their attendance in real time and updates the attendance records automatically.
-- **Payment Processing:** For events that require fees, students can make payments through the integrated payment gateway. The system supports both online and on-site payment options.
-- **Attendance Monitoring:** Event organizers can view live attendance statistics and generate reports to monitor event participation and trends.
-- **Event Management:** Administrative staff and organizers can create, edit, and manage event details, including scheduling, ticketing, and attendance rules.
-- **Reporting:** The system generates detailed attendance and payment reports, helping organizers and administrators with financial reconciliation and event analysis.
-- **User Management:** The system supports different user roles with appropriate access levels, including students, event organizers, and administrators.
-- **Attendance Report:** Event organizers can generate reports on student attendance, tracking participation and trends.
-- **Payment Report:** Organizers can view payment status and transaction history for event participants.
-- **Activity logs:** Admins can track user actions within the system for security and audit purposes.
-- **Give Feedback:** Students can provide feedback after events, helping improve future events.
-- **View feedback:** Event organizers can access student feedback to evaluate event success.
-- **View ongoing events:** Students can view details of upcoming or ongoing events to stay informed.
-
-![Use Case Diagram](https://github.com/user-attachments/assets/398bc5d0-5a69-44be-ab56-2037eaeebaa6)
-
-#### **1.3.2.1 Use Case Diagram**
-
-### **1.3.3 User characteristics**
+### **1.3.2 User characteristics**
 
 The Campus Event Check-in System is designed to serve several distinct user groups, each with specific characteristics and needs:
 
@@ -280,7 +259,7 @@ The Campus Event Check-in System is designed to serve several distinct user grou
 
 By understanding these user groups and their characteristics, the system can be designed to meet their specific usability needs, ensuring a positive user experience for all stakeholders.
 
-### **1.3.4 Limitations**
+### **1.3.3 Limitations**
 
 The Campus Event Check-in System has several limitations that define its operational boundaries:
 
@@ -312,7 +291,27 @@ These limitations should be considered when deploying and maintaining the system
 # **3 Requirements**
 
 ## **3.1 Functions**
+### **3.1.1 Product functions**
+The Campus Event Check-in System provides the following primary functions:
 
+- **Give feedback:** Students can provide feedback after events, helping improve future events.
+- **Check-in:** Students can check in to campus events by scanning or entering their Student ID. The system authenticates the student using the University Student Database before recording attendance in real time.
+- **View ongoing events:** Students can view details of upcoming or ongoing events to stay informed.
+- **Make payment:** Students pay for event fees through the system. This use case includes Process Payment, which is handled by the external University Payment Gateway.
+- **Monitor attendance:** Event Organizers and Admins can monitor real-time attendance data during events. This includes live updates on all participants who have checked in. Students can also use this feature to view their own attendance status, such as confirming whether they’ve successfully checked in or reviewing their attendance history for past events.
+- **Generate payment receipt:** The system generates a digital receipt after each successful payment. While this process is automatic, Event Organizers can access receipts for verification or financial reporting purposes.
+- **Generate attendance report:** Event Organizers can generate reports that summarize event attendance records. These reports help identify participation trends and overall event turnout.
+- **Manage events:** Organizers create, edit, and delete events. This includes managing event details, tickets, schedules, and attendance rules.
+- **View feedback:** Organizers can access feedback submitted by students to evaluate event success and identify areas for improvement.
+- **View payment record:** Organizers can view payment records for their events. This includes transaction history, payment status, and summary per participant.
+- **Authenticate Student:** Verifies the identity of students using the University Student Database before allowing them to check in to events.
+- **Process Payment:** Processes payment transactions through the University Payment Gateway and returns confirmation to the system.
+- **Manage user access:** Admins manage all system users by adding, editing, or removing user accounts and assigning appropriate roles (e.g., Student, Event Organizer).
+- **Manage activity logs:** Admins can track user actions within the system for security and audit purposes.
+
+![image](https://github.com/user-attachments/assets/c27eea8f-884e-47ce-95a9-b3daef48b668)
+
+#### **3.1.1.1 Use Case Diagram**
 ### **3.1.1 Student**
 
 Students are the primary users who attend events, check in, and make payments when necessary. Students may also give feed and view ongoing events.
@@ -831,6 +830,7 @@ The following packaging and security instructions **are part of the deployment r
 | CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3 |
 | CD-03 | Inconsistency between Use Case and Sequence Diagrams for “Monitor Attendance”: only Event Organizer shown in Sequence Diagram | Ng Kean Ping | 	Include all relevant actors (Student, Admin) in the Sequence Diagram | VS-02 | 4 |
 | CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
+| CD-05 | Product function explanation does not align with related use cases (e.g., missing or differently described functions). | Ng Kean Ping | Revise the product function section to ensure it matches the use case steps and descriptions clearly. | VS-01 | 4 |
 
 **B. Documentation Defect**
 
@@ -840,6 +840,7 @@ The following packaging and security instructions **are part of the deployment r
 | DD-02 | Pg 72, Pg 73, Pg 74 | Inconsistent typography in table of Section 5.2 — some rows meant not to be bold are bolded, causing visual inconsistency. | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
 | DD-03 | Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
 | DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
+| DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
 
 **C. Agreement Defect**
 
