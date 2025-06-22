@@ -423,15 +423,20 @@ Administrators manage the system backend, reporting, and user roles. Administrat
 
 ### **3.1.4 Summary Table**
 
-| Actor           | Function              | Description                       | Diagram               |
-|-----------------|-----------------------|-----------------------------------|-----------------------|
-| Student         | Student Check-in      | Check into events with Student ID | Student Check-in      |
-|                 | Payment Processing    | Make payments for paid events     | Payment Processing    |
-| Event Organizer | Attendance Monitoring | View real-time check-ins          | Attendance Monitoring |
-|                 | Event Monitoring      | Monitor overall event performance | Event Monitoring      |
-|                 | Event Management      | Create and manage event details   | Event Management      |
-| Administrator   | Reporting             | Generate detailed reports         | Reporting             |
-|                 | User Management       | Manage user roles and access      | User Management       |
+| Actor           | Function                   | Description                                             | Diagram               |
+|----------------|----------------------------|---------------------------------------------------------|-----------------------|
+| Student         | Student Check-in           | Check into events with Student ID                       | Student Check-in      |
+|                 | Payment Processing         | Make payments for paid events                           | Payment Processing    |
+|                 | Give Feedback              | Submit feedback for attended events                     | Student Give Feedback |
+| Event Organizer | Attendance Monitoring      | View real-time check-ins                                | Attendance Monitoring |
+|                 | Generate Payment Receipt   | Create payment receipts based on completed transactions | Payment Receipt       |
+|                 | Event Management           | Create and manage event details                         | Event Management      |
+|                 | Generate Attendance Report | Export attendance summaries for events                  | Attendance Report     |
+|                 | View Payment Record        | Generate financial summary for event payments           | Payment Record Viewer |
+|                 | View Feedback              | Read feedback submitted by students                     | Feedback Viewer       |
+| Administrator   | Manage User Access         | View, add, edit, or remove user accounts and assign roles | User Management      |
+|                 | View Activity Logs         | View logs of user actions for security and audit        | Activity Logs         |
+
 
 ## **3.2 Performance requirements**
 
