@@ -1,3 +1,7 @@
 | No. | Description of change | Date | Author | Reason |
 | --- | --- | --- | --- | --- |
 | 1. | Changing the feature from 'Offine Check-in Mode' to 'Personalized Event Recommendation' | 22/6/2025; 4.08pm | Liew Wei Hong | The interview question and feature in item 10 are not aligned — the question refers to personalized event suggestions, while the feature written as offline check-in, leading to confusion and misinterpretation. |
+| 2. | Moved Use Case Diagram to Section 3.1, fixed associations, aligned functions with use cases, renamed unclear use cases | 22/6/2025; 5.16pm | Ng Kean Ping | To improve document structure and ensure consistency between product functions and use cases. |
+| 3. | Completed Key Data Entities table with missing data types; corrected PK/FK labels | 22/6/2025; 5.44pm | Ng Kean Ping | To ensure accuracy and alignment with the ERD. |
+| 4. | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | 22/6/2025; 7.54pm | Ng Kean Ping | To reflect the latest data model decisions, simplify redundant entities, and ensure relational accuracy. |
+| 5. | Updated use case and sequence diagrams to ensure they reflect the same user flows and system processes; resolved mismatches in feature implementation steps. | 22/6/2025; 9.06pm | Ng Kean Ping | To resolve mismatches between design diagrams and described system behavior. |
