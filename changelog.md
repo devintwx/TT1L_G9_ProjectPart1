@@ -5,3 +5,4 @@
 | 3. | Completed Key Data Entities table with missing data types; corrected PK/FK labels | 22/6/2025; 5.44pm | Ng Kean Ping | To ensure accuracy and alignment with the ERD. |
 | 4. | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | 22/6/2025; 7.54pm | Ng Kean Ping | To reflect the latest data model decisions, simplify redundant entities, and ensure relational accuracy. |
 | 5. | Updated use case and sequence diagrams to ensure they reflect the same user flows and system processes; resolved mismatches in feature implementation steps. | 22/6/2025; 9.06pm | Ng Kean Ping | To resolve mismatches between design diagrams and described system behavior. |
+| 6. | Replacing the title of the section 4.3 to 'Verification of Elicitation Methods'. | 22/6/2025; 9.31pm | Liew Wei Hong | The title of section 4.3 is same in section 4.1 which causes confussion. |
