@@ -661,7 +661,8 @@ Rules that ensure the accuracy and consistency of the data. These constraints in
 
 a visual representation of the data entities and their relationships. The ERD simplifies understanding of how data flows between the system components.
 
-![ERD Diagram](https://github.com/user-attachments/assets/1e3bd717-b248-4ac1-aefb-b526184c8fb6)
+![image](https://github.com/user-attachments/assets/0c116387-1477-44f8-875e-843be4d64e98)
+
 
 ## **3.6 Design constraints**
 
