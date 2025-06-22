@@ -295,20 +295,20 @@ These limitations should be considered when deploying and maintaining the system
 ### **3.1.1 Product functions**
 The Campus Event Check-in System provides the following primary functions:
 
-- **Give feedback:** Students can provide feedback after events, helping improve future events.
-- **Check-in:** Students can check in to campus events by scanning or entering their Student ID. The system authenticates the student using the University Student Database before recording attendance in real time.
-- **View ongoing events:** Students can view details of upcoming or ongoing events to stay informed.
-- **Make payment:** Students pay for event fees through the system. This use case includes Process Payment, which is handled by the external University Payment Gateway.
-- **Monitor attendance:** Event Organizers and Admins can monitor real-time attendance data during events. This includes live updates on all participants who have checked in. Students can also use this feature to view their own attendance status, such as confirming whether they’ve successfully checked in or reviewing their attendance history for past events.
-- **Generate payment receipt:** The system generates a digital receipt after each successful payment. While this process is automatic, Event Organizers can access receipts for verification or financial reporting purposes.
-- **Generate attendance report:** Event Organizers can generate reports that summarize event attendance records. These reports help identify participation trends and overall event turnout.
-- **Manage events:** Organizers create, edit, and delete events. This includes managing event details, tickets, schedules, and attendance rules.
-- **View feedback:** Organizers can access feedback submitted by students to evaluate event success and identify areas for improvement.
-- **View payment record:** Organizers can view payment records for their events. This includes transaction history, payment status, and summary per participant.
-- **Authenticate Student:** Verifies the identity of students using the University Student Database before allowing them to check in to events.
-- **Process Payment:** Processes payment transactions through the University Payment Gateway and returns confirmation to the system.
-- **Manage user access:** Admins manage all system users by adding, editing, or removing user accounts and assigning appropriate roles (e.g., Student, Event Organizer).
-- **Manage activity logs:** Admins can track user actions within the system for security and audit purposes.
+1. **Give feedback:** Students can provide feedback after events, helping improve future events.
+2. **Check-in:** Students can check in to campus events by scanning or entering their Student ID. The system authenticates the student using the University Student Database before recording attendance in real time.
+3. **View ongoing events:** Students can view details of upcoming or ongoing events to stay informed.
+4. **Make payment:** Students pay for event fees through the system. This use case includes Process Payment, which is handled by the external University Payment Gateway.
+5. **Monitor attendance:** Event Organizers and Admins can monitor real-time attendance data during events. This includes live updates on all participants who have checked in. Students can also use this feature to view their own attendance status, such as confirming whether they’ve successfully checked in or reviewing their attendance history for past events.
+6. **Generate payment receipt:** The system generates a digital receipt after each successful payment. While this process is automatic, Event Organizers can access receipts for verification or financial reporting purposes.
+7. **Generate attendance report:** Event Organizers can generate reports that summarize event attendance records. These reports help identify participation trends and overall event turnout.
+8. **Manage events:** Organizers create, edit, and delete events. This includes managing event details, tickets, schedules, and attendance rules.
+9. **View feedback:** Organizers can access feedback submitted by students to evaluate event success and identify areas for improvement.
+10. **View payment record:** Organizers can view payment records for their events. This includes transaction history, payment status, and summary per participant.
+11. **Authenticate Student:** Verifies the identity of students using the University Student Database before allowing them to check in to events.
+12. **Process Payment:** Processes payment transactions through the University Payment Gateway and returns confirmation to the system.
+13. **Manage user access:** Admins manage all system users by adding, editing, or removing user accounts and assigning appropriate roles (e.g., Student, Event Organizer).
+14. **Manage activity logs:** Admins can track user actions within the system for security and audit purposes.
 
 ![image](https://github.com/user-attachments/assets/1c59d486-181a-47be-bb7c-75f43827e3a6)
 #### **3.1.1.1 Use Case Diagram**
