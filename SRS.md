@@ -620,29 +620,30 @@ The core data entities used in the system along with their primary attributes. E
 | Entity | Attributes |
 | --- | --- |
 | Student | studentID (PK, String), name (String), email (String), program (String), year (String), phoneNumber (String) |
-| Event | eventID (PK, String), title (String), description (String), date (Date), startTime (Time), endTime (Time), location (String), fee (Decimal) |
-| CheckIn | checkInID (PK, String), eventID (FK, String), studentID (FK, String), checkInTime (DateTime), status (String) |
-| Payment | paymentID (PK, String), studentID (FK, String), eventID (FK, String), amount (Decimal), paymentTime (DateTime), method (String), status (String) |
 | User | userID (PK, String), name (String), email (String), role (String), passwordHash (String) |
-| Report | reportID (PK, String), eventID (FK, String), generatedBy (FK → userID), reportType (String), generatedTime (DateTime), filePath (String) |
-| Attendance | attendanceID (PK, String), eventID (FK, String), studentID (FK, String), attended (Boolean), remarks (String) |
+| Event | eventID (PK, String), organizerID (FK, String), title (String), description (String), date (Date), startTime (Time), endTime (Time), location (String), fee (Decimal) |
+| Attendance | attendanceID (PK, String), eventID (FK, String), studentID (FK, String), checkInTime (DateTime), attended (Boolean), status (String), remarks (String) |
+| Payment | paymentID (PK, String), studentID (FK, String), eventID (FK, String), amount (Decimal), paymentTime (DateTime), method (String), status (String) |
+| Report | reportID (PK, String), eventID (FK, String), userID (FK, String), reportType (String), generatedTime (DateTime), filePath (String) |
 
 ### **3.5.2 Relationships**
 
-how entities are connected, reflecting business rules such as "a student can check in to multiple events" or "an event can generate multiple reports." These relationships help structure the database to support real-world workflows.
+The following relationships define how entities in the system are connected. These connections reflect business rules and ensure the system supports real-world workflows.
 
-- **Student – CheckIn**: One-to-many  
-    A student can check in to many events. Each check-in record links a student to a specific event.
+- **Student – Attendance**: One-to-many  
+    A student can attend many events. Each attendance record links a student to a specific event.
 - **Student – Payment**: One-to-many  
     A student can make multiple payments for different events.
-- **Event – CheckIn**: One-to-many  
-    Each event can have many students checking in.
+- **Event – Attendance**: One-to-many  
+    Each event can have many students attending and checking in.
 - **Event – Payment**: One-to-many  
-    Each event may require and receive multiple payments from students
+    Each event may receive multiple payments from students.
 - **Event – Report**: One-to-many  
-    Each event may have multiple reports (e.g., attendance, payment)
+    Each event can generate multiple reports (e.g., attendance, payment).
 - **User – Event**: One-to-many  
-    Organizers (a subtype of User) can manage multiple events.
+    An organizer (a type of user) can manage or create multiple events.
+- **User – Report**: One-to-many  
+    An organizer (a type of user) can generate multiple attendance reports.
 
 ### **3.5.3 Constraints**
 
@@ -650,16 +651,24 @@ Rules that ensure the accuracy and consistency of the data. These constraints in
 
 - **Primary Keys**: Each table must have a unique primary key (e.g., studentID, eventID).
 - **Foreign Key Constraints**:
-  - CheckIn.studentID -> Student.studentID
-  - CheckIn.eventID -> Event.eventID
-  - Payment.studentID -> Student.studentID
-  - Payment.eventID -> Event.eventID
-  - Report.eventID -> Event.eventID
-  - Report.generatedBy -> User.userID
+  - Attendance.studentID → Student.studentID
+  - Attendance.eventID → Event.eventID
+  - Event.organizerID → User.userID
+  - Payment.studentID → Student.studentID
+  - Payment.eventID → Event.eventID
+  - Report.eventID → Event.eventID
+  - Report.userID → User.userID
+
 - **Uniqueness Constraints**:
-  - A student cannot check in more than once to the same event (composite unique: studentID + eventID).
-  - A payment record must be unique per student per event (composite unique: studentID + eventID).
-- **Not Null Constraints**: Required fields such as studentID, eventID, and payment amount must not be null.
+  - A student cannot check in more than once to the same event:
+      - Composite unique constraint: studentID + eventID in Attendance.
+  - A student cannot make multiple payments for the same event:
+      -  Composite unique constraint: studentID + eventID in Payment.
+- **Not Null Constraints**:
+  - Attendance: studentID, eventID, checkInTime, attended.
+  - Payment: studentID, eventID, amount, paymentTime.
+  - Report: eventID, userID, generatedTime.
+  - Event: organizerID, title, date, startTime, endTime.
 
 ### **3.5.4 Entity Relationship Diagram (ERD)**
 
@@ -842,6 +851,7 @@ The following packaging and security instructions **are part of the deployment r
 | DD-03 | Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
 | DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
 | DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
+| DD-06 | Pg 41, Pg42 | Sections 3.5.2 (Relationships) and 3.5.3 (Constraints) do not align with the updated data entities in 3.5.1. | Ng Kean Ping | Revise 3.5.2 and 3.5.3 to match the latest 3.5.1 Key Data Entities and include accurate relationships and constraints. | VS-03 | 4 |
 
 **C. Agreement Defect**
 
