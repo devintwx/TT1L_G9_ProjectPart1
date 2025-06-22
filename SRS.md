@@ -783,7 +783,7 @@ Event ID, Event Name, Student ID, Name, Check-in Time, Status
 
 EVT-240501, Career Fair 2025, A2023000193, Sarah Lim, 2025-05-20 09:02, Present
 
-### ** 3.8.2 Elicitation and Research Sources**
+### **3.8.2 Elicitation and Research Sources**
 
 These sources **are not formal requirements**, but they provide context for the development team and stakeholders.
 
@@ -825,28 +825,26 @@ The following packaging and security instructions **are part of the deployment r
 
 **A. Content Defect**
 
-| **CD ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| **Defect ID** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| CD-01 | Incorrect feature | Liew Wei Hong | Replace to a suitable feature | VS-04 | 4   |
+| CD-01 | Incorrect Feature Referenced in Interview Question 10: The feature described does not align with the actual functionality required by the question, indicating a mismatch or misunderstanding of system features. | Liew Wei Hong | Replace to a suitable feature name | VS-04 | 4   |
 | CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3 |
 | CD-03 | Inconsistency between Use Case and Sequence Diagrams for “Monitor Attendance”: only Event Organizer shown in Sequence Diagram | Ng Kean Ping | 	Include all relevant actors (Student, Admin) in the Sequence Diagram | VS-02 | 4 |
 | CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
 
 **B. Documentation Defect**
 
-| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
-| --- | --- | --- | --- | --- | --- |
-| Pg 51 | Duplication of title | Liew Wei Hong | Replace duplicated title | VS-04 | 3   |
-| Pg 72, Pg 73, Pg 74 | Inconsistent typography | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
-| Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
-| Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
-| Pg 50 - Pg 51 | Repetition in “Verification Approach. Sections 4.1 and 4.3 have duplicate headings and overlap in content, lacking clear separation. | Tang Wei Xiong | Combine and clarify purpose: use one "Verification Approach" with a clear structure. | VS-04 | 3   |
+| **Defect ID**| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
+| --- | --- | --- | --- | --- | --- | --- |
+| DD-01 | Pg 51 | Repetition in “Verification Approach. Sections 4.1 and 4.3 have duplicate headings and overlap in content, lacking clear separation. | Liew Wei Hong | Replace duplicated title | VS-04 | 2   |
+| DD-02 | Pg 72, Pg 73, Pg 74 | Inconsistent typography in table of Section 5.2 — some rows meant not to be bold are bolded, causing visual inconsistency. | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
+| DD-03 | Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
+| DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
 
 **C. Agreement Defect**
 
-| **AD ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
+| **Defect ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| e.g. AD-00 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
 | AD-01 | Stakeholder Misalignment on Offline Check-In | Offline mode is mentioned as critical in interviews and observations, but is not included as a requirement. | Tang Wei Xiong | VS-02 | 5   |
 
 ### **3.8.7 Conflict Analysis**
@@ -863,12 +861,12 @@ The following packaging and security instructions **are part of the deployment r
 
 ### **3.8.9 Change Log**
 
-| **Change ID** | **Req ID(s)** | **Summary of Change** | **Proposed By** | **Date** | **Session ID** |
+| **Change ID** | **Defect ID(s)** | **Summary of Change** | **Proposed By** | **Date** | **Session ID** |
 | --- | --- | --- | --- | --- | --- |
 | CH-01 | REQ-001 | Added acceptance criteria | Alice | dd-mm-yyyy | VS-01 |
 | CH-02 | REQ-012 | Adjusted uptime expectation | Ben | dd-mm-yyyy | VS-02 |
 
-### #**3.8.10 Requirements Traceability Matrix**
+### **3.8.10 Requirements Traceability Matrix**
 
 | **RTM ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1-4)** |
 | --- | --- | --- | --- | --- | --- |
@@ -1091,7 +1089,7 @@ Results showed the offline RFID system reduced transaction times significantly c
 | Support web (admin), mobile app (students), and optional kiosks. | Attractive | Cross-platform increases accessibility and convenience. |
 | Pilot test at campus events; stress test concurrency; collect user feedback. | Must-Be | Identifies bugs and improves UX before full rollout. |
 
-## **4.5 **Overall Elicitation**
+## **4.5 Overall Elicitation**
 
 The execution of the elicitation phase was carefully documented and cross-referenced for accuracy and relevance:
 
