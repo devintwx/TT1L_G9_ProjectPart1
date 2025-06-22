@@ -834,6 +834,7 @@ The following packaging and security instructions **are part of the deployment r
 | DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
 | DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
 | DD-06 | Pg 41, Pg42 | Sections 3.5.2 (Relationships) and 3.5.3 (Constraints) do not align with the updated data entities in 3.5.1. | Ng Kean Ping | Revise 3.5.2 and 3.5.3 to match the latest 3.5.1 Key Data Entities and include accurate relationships and constraints. | VS-03 | 4 |
+| DD-07 | Pg 8 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-06 | 3 |
 
 **C. Agreement Defect**
 
@@ -862,6 +863,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-03 | DD-05 | Completed Key Data Entities table by adding missing data types and correcting PK/FK labels to match the ERD. | Ng Kean Ping | 22/6/2025; 5.44pm | VS-03 | 
 | CH-04 | DD-06 | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | Ng Kean Ping | 22/6/2025; 7.54pm | VS-03 |
 | CH-05 | CD-03 | Updated use case and sequence diagrams to align with each other; resolved inconsistency between described system flow and visual representation. | Ng Kean Ping | 22/6/2025; 9.06pm | VS-03 |
+| CH-06 | DD-07 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows. | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-06 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
