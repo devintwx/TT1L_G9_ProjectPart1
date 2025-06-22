@@ -806,11 +806,11 @@ The following packaging and security instructions **are part of the deployment r
 
 | **Session ID** | **Date and Time** | **Technique** | **Section Reviewed** | **Participant & Role** | **No. of Defect** |
 | --- | --- | --- | --- | --- | --- |
-| VS-01 | 17/6/2025; 11am-1pm | Inspection | 1.1, 1.2, 1.3, 1.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
-| VS-02 | 18/6/2025; 12pm-2pm | Inspection | 3.1, 3.2, 3.3, 3.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
-| VS-03 | 19/6/2025; 1pm-2.30pm | Inspection | 3.5, 3.6, 3.7, 3.8 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | x   |
-| VS-04 | 20/6/2025; 3pm-5pm | Inspection | 4.1, 4.2, 4.3, 4.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 2   |
-| VS-05 | 21/6/2025; 12pm-2pm | Inspection | 4.5, 5.1, 5.2, 5.3 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 1   |
+| VS-01 | 17/6/2025; 11am-1pm | Inspection | 1.1, 1.2, 1.3, 1.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 5 |
+| VS-02 | 18/6/2025; 12pm-2pm | Inspection | 3.1, 3.2, 3.3, 3.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 2 |
+| VS-03 | 19/6/2025; 1pm-2.30pm | Inspection | 3.5, 3.6, 3.7, 3.8 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 2 |
+| VS-04 | 20/6/2025; 3pm-5pm | Inspection | 4.1, 4.2, 4.3, 4.4 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 3 |
+| VS-05 | 21/6/2025; 12pm-2pm | Inspection | 4.5, 5.1, 5.2, 5.3 | Tang Wei Xiong (Inspector), Liew Wei Hong (Inspector), Ng Kean Ping (Inspector), Chan Mei Yi (Inspector) | 1 |
 
 ### **3.8.6 Defect Summary**
 
@@ -829,12 +829,12 @@ The following packaging and security instructions **are part of the deployment r
 | **Defect ID**| **Page No.** | **Validation and Defect Description** | **Detected By** | **Comment/Suggested Fix** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- | --- |
 | DD-01 | Pg 51 | Repetition in “Verification Approach. Sections 4.1 and 4.3 have duplicate headings and overlap in content, lacking clear separation. | Liew Wei Hong | Replace duplicated title | VS-04 | 2   |
-| DD-02 | Pg 72, Pg 73, Pg 74 | Inconsistent typography in table of Section 5.2 — some rows meant not to be bold are bolded, causing visual inconsistency. | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
+| DD-02 | Pg 72, Pg 73, Pg 74 | Inconsistent typography in table of Section 5.2 — some columns meant not to be bold are bolded, causing visual inconsistency. | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
 | DD-03 | Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
 | DD-04 | Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
 | DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
 | DD-06 | Pg 41, Pg42 | Sections 3.5.2 (Relationships) and 3.5.3 (Constraints) do not align with the updated data entities in 3.5.1. | Ng Kean Ping | Revise 3.5.2 and 3.5.3 to match the latest 3.5.1 Key Data Entities and include accurate relationships and constraints. | VS-03 | 4 |
-| DD-07 | Pg 8 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-06 | 3 |
+| DD-07 | Pg 8 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-01 | 3 |
 
 **C. Agreement Defect**
 
@@ -865,6 +865,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-05 | CD-03 | Updated use case and sequence diagrams to align with each other; resolved inconsistency between described system flow and visual representation. | Ng Kean Ping | 22/6/2025; 9.06pm | VS-03 |
 | CH-06 | DD-01 | Changed the title of section 4.3 to 'Verification of Elicitation Methods' | Liew Wei Hong | 22/6/2025; 9.31pm | VS-04 |
 | CH-07 | DD-07 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows. | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-06 |
+| CH-08 | DD-02 | Removed the bold text of 'Full Term' column in table 5.2 | Liew Wei Hong | 22/6/2025; 12.40pm | VS-05 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
