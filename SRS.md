@@ -915,7 +915,7 @@ Verification ensures that all requirements gathered through various elicitation 
 - **Traceability**: Requirements are properly recorded, categorized by the Kano model, and stored in the GitHub repository for easy access and version control.
 - **User Validation**: Direct interaction with students through interviews and user surveys confirmed the practical value and relevance of the proposed features.
 
-## **4.3 Verification Approach**
+## **4.3 Verification of Elicitation Methods**
 
 To verify the elicited requirements, each item was assessed based on three criteria: its source (interview, observation, or brainstorming), the method used to verify it (feedback, existing systems, or system simulation), and documented evidence (articles, transcripts, system design). The table below summarizes the verification process:
 
