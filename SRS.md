@@ -176,7 +176,7 @@ for
 
 [**4.2** **Verification Criteria** 50](#42-verification-criteria)
 
-[**4.3** **Verification Approach** 51](#43-verification-approach)
+[**4.3** **Verification of Elicitation Methods** 51](#43-verification-approach)
 
 [**4.4** **Proof of Execution** 53](#44-proof-of-execution)
 
@@ -863,7 +863,8 @@ The following packaging and security instructions **are part of the deployment r
 | CH-03 | DD-05 | Completed Key Data Entities table by adding missing data types and correcting PK/FK labels to match the ERD. | Ng Kean Ping | 22/6/2025; 5.44pm | VS-03 | 
 | CH-04 | DD-06 | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | Ng Kean Ping | 22/6/2025; 7.54pm | VS-03 |
 | CH-05 | CD-03 | Updated use case and sequence diagrams to align with each other; resolved inconsistency between described system flow and visual representation. | Ng Kean Ping | 22/6/2025; 9.06pm | VS-03 |
-| CH-06 | DD-07 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows. | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-06 |
+| CH-06 | DD-01 | Changed the title of section 4.3 to 'Verification of Elicitation Methods' | Liew Wei Hong | 22/6/2025; 9.31pm | VS-04 |
+| CH-07 | DD-07 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows. | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-06 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
