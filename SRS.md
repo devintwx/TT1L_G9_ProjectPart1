@@ -309,135 +309,116 @@ The Campus Event Check-in System provides the following primary functions:
 - **Manage user access:** Admins manage all system users by adding, editing, or removing user accounts and assigning appropriate roles (e.g., Student, Event Organizer).
 - **Manage activity logs:** Admins can track user actions within the system for security and audit purposes.
 
-![image](https://github.com/user-attachments/assets/692a6c20-e7bf-4d7f-8699-6591d1a7648c)
-
-
+![image](https://github.com/user-attachments/assets/1c59d486-181a-47be-bb7c-75f43827e3a6)
 #### **3.1.1.1 Use Case Diagram**
-### **3.1.1 Student**
+
+### **3.1.2 Student**
 
 Students are the primary users who attend events, check in, and make payments when necessary. Students may also give feed and view ongoing events.
 
-#### **3.1.1.1 Student Check-in**
+#### **3.1.2.1 Check-in**
 
 - **Function:** Allows students to check in to an event using their Student ID.
 - **Explanation:** The system verifies the student’s identity and records their attendance.
-- **Diagram:** Student Check-in
 
 ![3 1 1 1](https://github.com/user-attachments/assets/3a45908b-c715-4871-b844-3d7b0c91f708)
+#### **3.1.2.1 Check-in sequence diagram**
 
-#### **3.1.1.2 Payment Processing**
+#### **3.1.2.2 Make Payment**
 
 - **Function:** Enables students to make payments for paid events.
 - **Explanation:** The system integrates with a secure payment gateway to process transactions and record them in the database.
-- **Diagram:** Payment Processing
 
 ![3 1 1 2](https://github.com/user-attachments/assets/8c005270-524a-425e-aeeb-cc7e7d0e650c)
+#### **3.1.2.2 Make Payment sequence diagram**
 
-#### **3.1.1.3 Give Feedback**
+#### **3.1.2.3 Give Feedback**
 
-- **Description:** Submit feedback for attended events (e.g., rating, comments).
-- **Purpose:** Helps organizers understand student satisfaction and improve future events.
-- **Diagram:** Give Feedback
+- **Function:** Submit feedback for attended events (e.g., rating, comments).
+- **Explanation:** Helps organizers understand student satisfaction and improve future events.
 
 ![3 1 1 3](https://github.com/user-attachments/assets/f40a1fac-9824-409c-aa36-4f778efcc9d7)
+#### **3.1.2.3 Give Feedback sequence diagram**
 
-#### **3.1.1.4 View Ongoing Events**
+#### **3.1.2.4 View Ongoing Events**
 
-- **Description:** Browse or search for currently active or upcoming events.
-- **Purpose:** Keeps students informed about available events and their details.
-- **Diagram:** View Ongoing Events
+- **Function:** Browse or search for currently active or upcoming events.
+- **Explanation:** Keeps students informed about available events and their details.
 
 ![3 1 1 4](https://github.com/user-attachments/assets/8e6def91-1d69-4e87-8b26-290c70547f72)
+#### **3.1.2.4 View Ongoing Events sequence diagram**
 
-### **3.1.2 Event Organizer**
+### **3.1.3 Event Organizer**
 
 Event Organizers are responsible for creating events, monitoring attendance, and managing event logistics. Event Organizers are responsible for making attendance reports and payment reports when necessary.
 
-#### **3.1.2.1 Attendance Monitoring**
+#### **3.1.3.1 Monitor Attendance**
 
-**Function**: Allows organizers to view live attendance and check-in statistics.
+**Function**: Allows event organizers and admins to see real-time attendance during events. Students can view their check-in status and past attendance records.
+**Explanation**: Organizers and admins can track who has checked in as the event happens. Students can confirm their check-in and review their attendance history.
 
-**Explanation**: The system provides real-time data on who has checked in, helping organizers monitor event participation.
+![image](https://github.com/user-attachments/assets/3533e653-5f9a-41fa-b877-a4143d3a7776)
+#### **3.1.3.1 Monitor Attendance sequence diagram**
 
-**Diagram**: Attendance Monitoring
+#### **3.1.3.2 Generate payment receipt**
 
-![3 1 2 1](https://github.com/user-attachments/assets/59a8160d-a759-46c1-8d23-3c392553d870)
+**Function**: Allows Event Organizers to generate a payment receipt for a participant based on completed payment records.
+**Explanation**: Event Organizers can access payment records and select a transaction to generate a receipt. The system retrieves the payment details from the database and creates a downloadable or viewable receipt. This helps organizers provide official proof of payment for participants and maintain accurate financial records.
 
-#### **3.1.2.2 Event Monitoring**
+![image](https://github.com/user-attachments/assets/5da72cf2-05e2-4170-8428-8c937d076710)
+#### **3.1.3.2 Generate payment receipt sequence diagram**
 
-**Function**: Gives organizers access to live event summaries, including attendance and payment updates.
+#### **3.1.3.3 Manage events**
 
-**Explanation**: A dashboard view shows key metrics and allows for timely interventions if needed (example: capacity limits).
+**Function**: Allows Event Organizers to create, edit, and delete events in the system through the dashboard.
+**Explanation**: Organizers can add new event details, make changes to existing events (such as updating the date, time, or location), or remove events that are no longer needed.
 
-**Diagram**: Event Monitoring
+![image](https://github.com/user-attachments/assets/38182de9-f6ea-4b08-bb33-90bf552b0cc1)
+#### **3.1.3.3 Manage events sequence diagram**
 
-![3 1 2 2](https://github.com/user-attachments/assets/3ac924f5-8e51-4b55-a82f-0a0a05f12cc0)
+#### **3.1.3.4 Generate attendance report**
 
-#### **3.1.2.3 Event Management**
-
-**Function**: Lets organizers create, update, and delete event details such as title, date, location, and ticketing options.
-
-**Explanation**: Ensures events are accurately listed and managed in the system.
-
-**Diagram**: Event Management
-
-![3 1 2 3](https://github.com/user-attachments/assets/c2bec7da-0a2f-4215-a0a2-b0e649af72a2)
-
-#### **3.1.2.4 Attendance Report**
-
-- **Description:** Generate attendance summary for specific events.
-- **Purpose:** View participant counts, check-in time, and no-shows.
-- **Diagram:** Attendance Report
+- **Function:** Allows Event Organizers to generate an attendance report for a specific event.
+- **Explanation:** Organizers can view and export a summary of attendance data, including who checked in and who was absent.
 
 ![3 1 2 4](https://github.com/user-attachments/assets/b1040751-32b9-427d-838f-5cc802993785)
+#### **3.1.3.4 Generate attendance report sequence diagram**
 
-#### **3.1.2.5 Payment Report**
+#### **3.1.3.5 View payment record**
 
-- **Description:** Generate financial summary for event payments.
-- **Purpose:** Supports financial reconciliation and accountability.
-- **Diagram:** Payment Report
-- 
+- **Function:** Generate financial summary for event payments.
+- **Explanation:** Supports financial reconciliation and accountability.
+
 ![3 1 2 5](https://github.com/user-attachments/assets/15b5889e-536f-419b-9ccc-c8241877aaa6)
+#### **3.1.3.5 View payment record sequence diagram**
 
-#### **3.1.2.6 View Feedback**
+#### **3.1.3.6 View Feedback**
 
-- **Description:** Read student-submitted feedback.
-- **Purpose:** Analyze satisfaction and identify areas of improvement.
-- **Diagram:** View Feedback
+- **Function:** Read student-submitted feedback.
+- **Explanation:** Analyze satisfaction and identify areas of improvement.
 
 ![3 1 2 6](https://github.com/user-attachments/assets/6d96034e-9243-459e-8d55-640109fe15f6)
+#### **3.1.3.6 View Feedback sequence diagram**
 
-### **3.1.3 Administrator**
+### **3.1.4 Administrator**
 
 Administrators manage the system backend, reporting, and user roles. Administrators also manage the activity logs for user actions.
 
-#### **3.1.3.1 Reporting**
+#### **3.1.4.1 Manage user access**
 
-**Function**: Generates reports on attendance, payments, and event success metrics.
-
-**Explanation**: Helps administrators perform audits, analyze trends, and support strategic planning.
-
-**Diagram**: Reporting
-
-![3 1 3 1](https://github.com/user-attachments/assets/3d15d8a6-cc29-4ce8-b76a-db231fe35498)
-
-#### **3.1.3.2 User Management**
-
-**Function**: Administers system users and their roles (e.g., assigning permissions, creating new organizers).
-
-**Explanation**: Ensures users have appropriate access and that user data is accurate and secure.
-
-**Diagram**: User Management
+**Function**: Allow administrator to manage user accounts, including viewing, creating, editing, and deleting users.
+**Explanation**: Admins can oversee the user database by adding new users, updating user roles or details, and removing inactive or unauthorized accounts.
 
 ![3 1 3 2](https://github.com/user-attachments/assets/d810cabb-aef2-446a-b36d-a4a7d130be5c)
+#### **3.1.4.1 Manage user access sequence diagram**
 
-#### **3.1.3.3 Activity Logs**
+#### **3.1.4.2 Manage activity logs**
 
-- **Description:** View logs of user actions across the system.
-- **Purpose:** Monitor security, detect misuse, and support audits.
-- **Diagram:** Activity Logs
+- **Function:** View logs of user actions across the system.
+- **Explanation:** Monitor security, detect misuse, and support audits.
 
 ![3 1 3 3](https://github.com/user-attachments/assets/eefa32e5-ccac-4214-8edd-3257d60c65b4)
+#### **3.1.4.2 Manage activity logs sequence diagram**
 
 ### **3.1.4 Summary Table**
 
@@ -838,7 +819,7 @@ The following packaging and security instructions **are part of the deployment r
 | --- | --- | --- | --- | --- | --- |
 | CD-01 | Incorrect Feature Referenced in Interview Question 10: The feature described does not align with the actual functionality required by the question, indicating a mismatch or misunderstanding of system features. | Liew Wei Hong | Replace to a suitable feature name | VS-04 | 4   |
 | CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3 |
-| CD-03 | Inconsistency between Use Case and Sequence Diagrams for “Monitor Attendance”: only Event Organizer shown in Sequence Diagram | Ng Kean Ping | 	Include all relevant actors (Student, Admin) in the Sequence Diagram | VS-02 | 4 |
+| CD-03 | Use case diagram and sequence diagram were not aligned (e.g., missing or inconsistent actions) | Ng Kean Ping | 	Ensure all use cases shown in the diagram are supported by a corresponding sequence diagram. Update diagrams for consistency. | VS-02 | 3 |
 | CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
 | CD-05 | Product function explanation does not align with related use cases (e.g., missing or differently described functions). | Ng Kean Ping | Revise the product function section to ensure it matches the use case steps and descriptions clearly. | VS-01 | 4 |
 
