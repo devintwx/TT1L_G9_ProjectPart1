@@ -614,17 +614,17 @@ This section outlines the logical database requirements of the Campus Event Chec
 
 ### **3.5.1 Key Data Entities and Attributes**
 
-the core data entities used in the system along with their primary attributes. Each entity represents a real-world object (e.g., student, event, payment) necessary to perform the system's main operations
+The core data entities used in the system along with their primary attributes. Each entity represents a real-world object (e.g., student, event, payment) necessary to perform the system's main operations
 
 | Entity | Attributes |
 | --- | --- |
-| Student | studentID (PK), name, email, program, year, phoneNumber |
-| Event | eventID (PK), title, description, date, startTime, endTime, location, fee |
-| CheckIn | checkInID (PK), eventID (FK), studentID (FK), checkInTime, status |
-| Payment | paymentID (PK), studentID (FK), eventID (FK), amount, paymentTime, method, status |
-| User | userID (PK), name, email, role (Admin, Organizer, Student), passwordHash |
-| Report | reportID (PK), eventID (FK), generatedBy (FK→User), reportType, generatedTime, filePath |
-| Attendance | attendanceID (PK), eventID (FK), studentID (FK), attended (Boolean), remarks |
+| Student | studentID (PK, String), name (String), email (String), program (String), year (String), phoneNumber (String) |
+| Event | eventID (PK, String), title (String), description (String), date (Date), startTime (Time), endTime (Time), location (String), fee (Decimal) |
+| CheckIn | checkInID (PK, String), eventID (FK, String), studentID (FK, String), checkInTime (DateTime), status (String) |
+| Payment | paymentID (PK, String), studentID (FK, String), eventID (FK, String), amount (Decimal), paymentTime (DateTime), method (String), status (String) |
+| User | userID (PK, String), name (String), email (String), role (String), passwordHash (String) |
+| Report | reportID (PK, String), eventID (FK, String), generatedBy (FK → userID), reportType (String), generatedTime (DateTime), filePath (String) |
+| Attendance | attendanceID (PK, String), eventID (FK, String), studentID (FK, String), attended (Boolean), remarks (String) |
 
 ### **3.5.2 Relationships**
 
