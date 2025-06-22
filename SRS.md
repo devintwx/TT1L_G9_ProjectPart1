@@ -1148,15 +1148,15 @@ The following table lists the acronyms and abbreviations used throughout this So
 | **SRS** | Software Requirements Specification | A formal document that outlines the functional and non-functional requirements of the system. |
 | **SIS** | Student Information System | A university database system used to manage and store student records and academic data. |
 | **ID** | Identification | A unique identifier (e.g., Student ID) used for user authentication and tracking. |
-| **UI** | **User Interface** | The graphical layout and interactive components through which users interact with the system. |
-| **UX** | **User Experience** | The overall experience of users when using the system, including ease of use and satisfaction. |
-| **SSO** | **Single Sign-On** | A centralized login system allowing users to access multiple services using one set of credentials. |
-| **Qr Code** | **Quick Response Code** | A machine-readable barcode that stores information, often used for check-ins or linking to URLs. |
-| **API** | **Application Programming Interface** | A set of functions and protocols that allow different software systems to communicate. |
-| **DB** | **Database** | A structured collection of data stored electronically and accessed by the system’s backend. |
-| **HTTP** | **Hypertext Transfer Protocol** | A protocol used for transmitting data over the web, essential for the system’s web interface. |
-| **SSL** | **Secure Socket Layer** | A security protocol that provides encrypted communication between the client and the server. |
-| **CRUD** | **Create,Read,Update,Delete** | Basic operations performed on data stored in databases, essential for event and user management. |
+| **UI** | User Interface | The graphical layout and interactive components through which users interact with the system. |
+| **UX** | User Experience | The overall experience of users when using the system, including ease of use and satisfaction. |
+| **SSO** | Single Sign-On | A centralized login system allowing users to access multiple services using one set of credentials. |
+| **Qr Code** | Quick Response Code | A machine-readable barcode that stores information, often used for check-ins or linking to URLs. |
+| **API** | Application Programming Interface | A set of functions and protocols that allow different software systems to communicate. |
+| **DB** | Database | A structured collection of data stored electronically and accessed by the system’s backend. |
+| **HTTP** | Hypertext Transfer Protocol | A protocol used for transmitting data over the web, essential for the system’s web interface. |
+| **SSL** | Secure Socket Layer | A security protocol that provides encrypted communication between the client and the server. |
+| **CRUD** | Create,Read,Update,Delete | Basic operations performed on data stored in databases, essential for event and user management. |
 
 ## **5.3 Glossary**
 
