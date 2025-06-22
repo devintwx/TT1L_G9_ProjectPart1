@@ -830,6 +830,7 @@ The following packaging and security instructions **are part of the deployment r
 | CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
 | CD-05 | Product function explanation does not align with related use cases (e.g., missing or differently described functions). | Ng Kean Ping | Revise the product function section to ensure it matches the use case steps and descriptions clearly. | VS-01 | 4 |
 | CD-06 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-01 | 3 |
+| CD-07 | Redundant entities in ERD: CheckIn and Attendance overlap in functionality and attributes. Also, several entities lack explicit PK/FK labels | Chan Mei Yi | Merge CheckIn into Attendance and revise attributes. Add missing PK (Primary Key) and FK (Foreign Key) annotations | VS-03 | 4 |
 
 **B. Documentation Defect**
 
@@ -875,6 +876,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-07 | CD-06 | Revised Level 0 Context Diagram: added missing data flows (e.g., feedback to organizer), renamed unclear flows | Chan Mei Yi	 | 22/6/2025; 9.46pm | VS-01 |
 | CH-08 | DD-02 | Removed the bold text of 'Full Term' column in table 5.2 | Liew Wei Hong | 22/6/2025; 12.40pm | VS-05 |
 | CH-09 | DD-07 | Revised actor-function summary table to match available sequence diagrams | Chan Mei Yi	 | 23/6/2025; 1.46am | VS-02 |
+| CH-10 | CD-07 | Revised ERD: Merged CheckIn into Attendance, removed redundant entity, added missing PK/FK labels to all entities, and updated relationships accordingly. | Chan Mei Yi	 | 23/6/2025; 2.27am | VS-03 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
