@@ -861,10 +861,9 @@ The following packaging and security instructions **are part of the deployment r
 
 ### **3.8.9 Change Log**
 
-| **Change ID** | **Defect ID(s)** | **Summary of Change** | **Proposed By** | **Date** | **Session ID** |
+| **Change ID** | **Defect ID(s)** | **Summary of Change** | **Proposed By** | **Date & Time** | **Session ID** |
 | --- | --- | --- | --- | --- | --- |
-| CH-01 | REQ-001 | Added acceptance criteria | Alice | dd-mm-yyyy | VS-01 |
-| CH-02 | REQ-012 | Adjusted uptime expectation | Ben | dd-mm-yyyy | VS-02 |
+| CH-01 | CD-01 | Correction of the wrong feature | Liew Wei Hong | 22-6-2025; 4.08pm | VS-04 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
