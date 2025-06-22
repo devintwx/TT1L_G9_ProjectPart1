@@ -860,6 +860,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-02 | CD-02,CD-05,DD-03 | Relocated Use Case Diagram to Section 3.1 and corrected associations; aligned product functions with use cases; revised unclear use case names. | Ng Kean Ping | 22/6/2025; 5.16pm | VS-01 |
 | CH-03 | DD-05 | Completed Key Data Entities table by adding missing data types and correcting PK/FK labels to match the ERD. | Ng Kean Ping | 22/6/2025; 5.44pm | VS-03 | 
 | CH-04 | DD-06 | Revised Sections 3.5.2 and 3.5.3 to align with updated data entities in 3.5.1. Removed CheckIn, added organizerID, and updated all affected relationships and constraints. | Ng Kean Ping | 22/6/2025; 7.54pm | VS-03 |
+| CH-05 | CD-03 | Updated use case and sequence diagrams to align with each other; resolved inconsistency between described system flow and visual representation. | Ng Kean Ping | 22/6/2025; 9.06pm | VS-03 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
