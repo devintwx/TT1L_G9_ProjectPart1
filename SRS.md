@@ -242,7 +242,8 @@ The system provides core functionalities such as student check-in using Student 
 
 The Campus Event Check-in System is a web-based application that operates through an internet connection. When users access the system, the server authenticates their identity using the University Student Database. Based on their role as a student, event organizer, or admin officer, users are given access to specific features. The system also connects to the University Payment Gateway to process event-related transactions. All data is fetched and managed through the web server and presented to the user in real time.
 
-![Context Diagram](https://github.com/user-attachments/assets/b0551a69-2f20-4c30-84fd-40e7a3652d6b)
+![image](https://github.com/user-attachments/assets/ced3edb0-c1bc-4eda-8f6e-874a01da2a99)
+
 
 #### **1.3.1.1 Context Diagram**
 
