@@ -865,6 +865,7 @@ The following packaging and security instructions **are part of the deployment r
 | **Change ID** | **Defect ID(s)** | **Summary of Change** | **Proposed By** | **Date & Time** | **Session ID** |
 | --- | --- | --- | --- | --- | --- |
 | CH-01 | CD-01 | Correction of the wrong feature | Liew Wei Hong | 22-6-2025; 4.08pm | VS-04 |
+| CH-02 | CD-02,CD-05,DD-03 | Relocated Use Case Diagram to Section 3.1 and corrected associations; aligned product functions with use cases; revised unclear use case names. | Ng Kean Ping | 22/6/2025; 5.16pm | VS-01 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
