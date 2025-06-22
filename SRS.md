@@ -309,7 +309,8 @@ The Campus Event Check-in System provides the following primary functions:
 - **Manage user access:** Admins manage all system users by adding, editing, or removing user accounts and assigning appropriate roles (e.g., Student, Event Organizer).
 - **Manage activity logs:** Admins can track user actions within the system for security and audit purposes.
 
-![image](https://github.com/user-attachments/assets/c27eea8f-884e-47ce-95a9-b3daef48b668)
+![image](https://github.com/user-attachments/assets/692a6c20-e7bf-4d7f-8699-6591d1a7648c)
+
 
 #### **3.1.1.1 Use Case Diagram**
 ### **3.1.1 Student**
