@@ -839,12 +839,15 @@ The following packaging and security instructions **are part of the deployment r
 | Pg 51 | Duplication of title | Liew Wei Hong | Replace duplicated title | VS-04 | 3   |
 | Pg 72, Pg 73, Pg 74 | Inconsistent typography | Liew Wei Hong | Change typography to ensure consistency | VS-05 | 1   |
 | Pg 10 | Use Case Diagram wrongly placed in Section 1.3, missing association line between actor and use case | Ng Kean Ping | Move Use Case Diagram to Section 3.1 Functional Requirements and ensure all actors are properly linked to use cases| VS-01 | 2 |
+| Pg 15 - Pg 27 | Missing Diagram Labels. Some diagrams referenced do not have captions or are inconsistently titled (e.g., "Diagram 3.1 Student Check-in Sequence Diagram "). | Tang Wei Xiong | Add consistent labels and figure numbers for clarity. | VS-04 | 2   |
+| Pg 50 - Pg 51 | Repetition in “Verification Approach. Sections 4.1 and 4.3 have duplicate headings and overlap in content, lacking clear separation. | Tang Wei Xiong | Combine and clarify purpose: use one "Verification Approach" with a clear structure. | VS-04 | 3   |
 
 **C. Agreement Defect**
 
 | **AD ID** | **Validation Description/Stakeholder Concern** | **Mismatch** | **Detected By** | **Session ID** | **Severity (1–5)** |
 | --- | --- | --- | --- | --- | --- |
-| e.g. AD-01 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
+| e.g. AD-00 | 24/7 uptime without failover | Operational feasibility gap | Ben | VS-02 | 5   |
+| AD-01 | Stakeholder Misalignment on Offline Check-In | Offline mode is mentioned as critical in interviews and observations, but is not included as a requirement. | Tang Wei Xiong | VS-02 | 5   |
 
 ### **3.8.7 Conflict Analysis**
 
