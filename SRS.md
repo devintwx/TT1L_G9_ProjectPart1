@@ -422,7 +422,7 @@ Administrators manage the system backend, reporting, and user roles. Administrat
 ![3 1 3 3](https://github.com/user-attachments/assets/eefa32e5-ccac-4214-8edd-3257d60c65b4)
 #### **3.1.4.2 Manage activity log sequence diagram**
 
-### **3.1.4 Summary Table**
+### **3.1.5 Summary Table**
 
 | Actor           | Function                   | Description                                             | Diagram                |
 |----------------|----------------------------|---------------------------------------------------------|------------------------|
