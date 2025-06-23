@@ -829,7 +829,7 @@ The following packaging and security instructions **are part of the deployment r
 | CD-01 | Incorrect Feature Referenced in Interview Question 10: The feature described does not align with the actual functionality required by the question, indicating a mismatch or misunderstanding of system features. | Liew Wei Hong | Replace to a suitable feature name | VS-04 | 4   |
 | CD-02 | Several use cases have incorrect or misleading names (e.g., "Make payment using Student ID") | Ng Kean Ping | Revise use case names to be clear and action-based (e.g., “Make Payment”) | VS-01 | 3 |
 | CD-03 | Use case diagram and sequence diagram were not aligned (e.g., missing or inconsistent actions) | Ng Kean Ping | 	Ensure all use cases shown in the diagram are supported by a corresponding sequence diagram. Update diagrams for consistency. | VS-02 | 3 |
-| CD-04 | Lack of Reminder Feature Requirement. Though identified during elicitation (student reminder is important), it's not formalized as a system function or requirement. | Tang Wei Xiong | Add as a functional or non-functional requirement (e.g., notification system or calendar integration). | VS-01 | 3 |
+| CD-04 | System Interfaces Do Not Include Notification/Email Service. System interfaces include SIS and payment gateway, but no email or SMS gateway for communication. | Tang Wei Xiong | Add notification system (e.g., SMTP or Twilio) to 3.4.1 with description. | VS-01 | 3 |
 | CD-05 | Product function explanation does not align with related use cases (e.g., missing or differently described functions). | Ng Kean Ping | Revise the product function section to ensure it matches the use case steps and descriptions clearly. | VS-01 | 4 |
 | CD-06 | Context Diagram has incomplete or unclear data flows and entity labels, which may mislead readers about system boundaries. | Chan Mei Yi | Revise context diagram by adding missing data flows (e.g., "Student Feedback"), and correcting flow names. | VS-01 | 3 |
 | CD-07 | Redundant entities in ERD: CheckIn and Attendance overlap in functionality and attributes. Also, several entities lack explicit PK/FK labels | Chan Mei Yi | Merge CheckIn into Attendance and revise attributes. Add missing PK (Primary Key) and FK (Foreign Key) annotations | VS-03 | 4 |
@@ -845,7 +845,6 @@ The following packaging and security instructions **are part of the deployment r
 | DD-05 | Pg 39 | Key Data Entities and Attributes table is incomplete: some attributes are missing data types, PK/FK labels are inconsistent with ERD | Ng Kean Ping | Add missing data types, and clearly label all Primary Keys (PK) and Foreign Keys (FK) to match the ERD exactly. | VS-03 | 4 |
 | DD-06 | Pg 41, Pg42 | Sections 3.5.2 (Relationships) and 3.5.3 (Constraints) do not align with the updated data entities in 3.5.1. | Ng Kean Ping | Revise 3.5.2 and 3.5.3 to match the latest 3.5.1 Key Data Entities and include accurate relationships and constraints. | VS-03 | 4 |
 | DD-07 | Pg 28 | Inconsistent function summary table: missing functions and mismatched naming compared to sequence diagrams | Chan Mei Yi | Revise function summary table to align with all existing sequence diagrams and ensure accuracy of function names. | VS-02 | 3 |
-
 
 **C. Agreement Defect**
 
