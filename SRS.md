@@ -329,7 +329,7 @@ Students are the primary users who attend events, check in, and make payments wh
 #### **3.1.2.2 Make Payment**
 
 - **Function:** Enables students to make payments for paid events.
-- **Explanation:** The system integrates with a secure payment gateway to process transactions and record them in the database.
+- **Explanation:** The system integrates with a secure payment gateway to process transactions and record them in the database. Notifications for reminders and payment confirmations will be sent via the integrated email/SMS service.
 
 ![3 1 1 2](https://github.com/user-attachments/assets/8c005270-524a-425e-aeeb-cc7e7d0e650c)
 #### **3.1.2.2 Make Payment sequence diagram**
@@ -555,6 +555,7 @@ System interfaces describe how the application interacts with other systems in t
 | SI-02 | The system shall integrate with the **university’s official payment gateway** (e.g., FPX or Maybank2U) for processing payments. |
 | SI-03 | The system shall connect to the university’s **event calendar system** to synchronize scheduled events, ensuring consistent event data across platforms. |
 | SI-04 | The system shall support local offline data storage and later synchronization for check-in records. |
+| SI-04 | The system shall integrate with an external email or SMS gateway (e.g., SMTP server or Twilio API) to send event reminders, payment confirmations, and check-in notifications to users. |
 
 ### **3.4.2 User Interfaces**
 
@@ -886,6 +887,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-09 | DD-07 | Revised actor-function summary table to match available sequence diagrams | Chan Mei Yi	 | 23/6/2025; 1.46am | VS-02 |
 | CH-10 | CD-07 | Revised ERD: Merged CheckIn into Attendance, removed redundant entity, added missing PK/FK labels to all entities, and updated relationships accordingly. | Chan Mei Yi	 | 23/6/2025; 2.27am | VS-03 |
 | CH-11 | AD-01 | Aligns system functionality with validated stakeholder needs. Enhances system reliability in poor connectivity environments and closes a major requirement gap. | Tang Wei Xiong	 | 23/6/2025; 11.12pm | VS-02 |
+| CH-12 | CD-04 | Inclusion of Notification/Email System Interface. Section 3.4.1 System Interfaces was updated to include integration with notification systems (e.g., SMTP or Twilio) for sending reminders and confirmations. | Tang Wei Xiong | 23/6/2025; 11.12pm | VS-02 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
