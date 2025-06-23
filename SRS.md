@@ -34,11 +34,9 @@ for
 
 [**1.3.1** **Product perspective** 8](#131-product-perspective)
 
-[**1.3.2** **Product functions** 9](#132-product-functions)
+[**1.3.2** **User characteristics** 11](#132-user-characteristics)
 
-[**1.3.3** **User characteristics** 11](#133-user-characteristics)
-
-[**1.3.4** **Limitations** 12](#134-limitations)
+[**1.3.3** **Limitations** 12](#133-limitations)
 
 [**1.4** **Definitions** 13](#14-definitions)
 
