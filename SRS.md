@@ -321,6 +321,7 @@ Students are the primary users who attend events, check in, and make payments wh
 
 - **Function:** Allows students to check in to an event using their Student ID.
 - **Explanation:** The system verifies the student’s identity and records their attendance.
+- **Note:** In areas with limited or unstable internet connection, the system shall support offline check-in. Student check-in data will be stored locally and automatically synced to the central database once connectivity is restored.
 
 ![3 1 1 1](https://github.com/user-attachments/assets/3a45908b-c715-4871-b844-3d7b0c91f708)
 #### **3.1.2.1 Check-in sequence diagram**
@@ -553,6 +554,7 @@ System interfaces describe how the application interacts with other systems in t
 | SI-01 | The system shall interface with the **university’s student information system (SIS)** to authenticate and validate student IDs during event check-in. |
 | SI-02 | The system shall integrate with the **university’s official payment gateway** (e.g., FPX or Maybank2U) for processing payments. |
 | SI-03 | The system shall connect to the university’s **event calendar system** to synchronize scheduled events, ensuring consistent event data across platforms. |
+| SI-04 | The system shall support local offline data storage and later synchronization for check-in records. |
 
 ### **3.4.2 User Interfaces**
 
@@ -883,6 +885,7 @@ The following packaging and security instructions **are part of the deployment r
 | CH-08 | DD-02 | Removed the bold text of 'Full Term' column in table 5.2 | Liew Wei Hong | 22/6/2025; 12.40pm | VS-05 |
 | CH-09 | DD-07 | Revised actor-function summary table to match available sequence diagrams | Chan Mei Yi	 | 23/6/2025; 1.46am | VS-02 |
 | CH-10 | CD-07 | Revised ERD: Merged CheckIn into Attendance, removed redundant entity, added missing PK/FK labels to all entities, and updated relationships accordingly. | Chan Mei Yi	 | 23/6/2025; 2.27am | VS-03 |
+| CH-11 | AD-01 | Aligns system functionality with validated stakeholder needs. Enhances system reliability in poor connectivity environments and closes a major requirement gap. | Tang Wei Xiong	 | 23/6/2025; 11.12pm | VS-02 |
 
 ### **3.8.10 Requirements Traceability Matrix**
 
