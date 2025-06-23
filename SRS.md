@@ -890,6 +890,10 @@ The following packaging and security instructions **are part of the deployment r
 | RTM-04 | Administrative reporting queries shall generate summary reports within 10 seconds  | G2  | F7  | UC-07 | 3   |
 | RTM-05 | System shall handle at least 10 check-ins per second during busy events  | G1  | F2,F11  | UC-02 | 4   |
 | RTM-06 | System shall process 5 payments per second during peak time without errors  | G1,G3  | F4,F12  | UC-04 | 4   |
+| RTM-07 | The interface shall allow students to complete a check-in process in no more than 3 steps or clicks  | G1,G3  | F2  | UC-02 | 4   |
+| RTM-08 | Payment for an event shall be completed in under 5 steps, including confirmation through the payment gateway | G3  | F4, F12  | UC-04 | 4   |
+| RTM-09 | Experienced users shall be able to perform routine tasks (e.g., checking in, generating reports) in under 1 minute for each operation | G1,G2,G3  | F2, F7 | UC-02,UC-07 | 4 |
+| RTM-10 | The system shall include a feedback mechanism (e.g., thumbs-up/down or comment box) on key pages to allow users to report satisfaction or usability concerns | G3  | F1 | UC-01 | 3 |
 
 ### **3.8.11 Role in Requirements Validation, Negotiation & Management**
 
