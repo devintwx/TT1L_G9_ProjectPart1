@@ -857,7 +857,9 @@ The following packaging and security instructions **are part of the deployment r
 
 | **Conflict ID** | **Conflict Description** | **Conflict Analysis** | **Stakeholders Involved** | **Session ID** |
 | --- | --- | --- | --- | --- |
-| e.g. CF-01 | Performance vs cost tradeoff | Interest conflict - the QA and Development teams prioritized high performance, while the Product Owner (PO) emphasized minimizing costs. The underlying cause is differing role-based objectives: QA and Dev aim to ensure system reliability and speed, whereas PO is driven by budget constraints. This reflects a strategic misalignment that, if unresolved, could delay delivery or compromise quality. | PO, QA, Dev Team | VS-01 |
+| CF-01 | Real-time Check-In vs. Offline Capability | Functional conflict – Real-time check-in requires continuous internet connection, but offline mode is critical for areas with poor connectivity. Root cause: conflicting operational expectations between technical reliability and user accessibility. This can lead to failure in check-ins if not addressed. | Students, Event Organizers, Development Team | VS-01 |
+| CF-02 | 	Privacy Constraints vs. Reporting Requirements |Legal vs. functional conflict – PDPA compliance restricts access to personal data, but detailed reports are expected by organizers. Root cause: tension between legal compliance and business intelligence needs. | Legal Compliance Team, Admin, Dev Team | VS-02 |
+| CF-03 | University Payment Gateway Restriction vs. User Payment Preferencess |Integration constraint conflict – Students prefer e-wallets or UPI, but system is limited to university-approved gateways. The limitation could impact user adoption and satisfaction. | Students, Finance Department, Dev Team	 | VS-03 |
 
 ### **3.8.8 Conflict Analysis and Resolution**
 
