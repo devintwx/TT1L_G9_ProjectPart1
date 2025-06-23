@@ -887,7 +887,8 @@ The following packaging and security instructions **are part of the deployment r
 | CH-09 | DD-07 | Revised actor-function summary table to match available sequence diagrams | Chan Mei Yi	 | 23/6/2025; 1.46am | VS-02 |
 | CH-10 | CD-07 | Revised ERD: Merged CheckIn into Attendance, removed redundant entity, added missing PK/FK labels to all entities, and updated relationships accordingly. | Chan Mei Yi	 | 23/6/2025; 2.27am | VS-03 |
 | CH-11 | AD-01 | Aligns system functionality with validated stakeholder needs. Enhances system reliability in poor connectivity environments and closes a major requirement gap. | Tang Wei Xiong	 | 23/6/2025; 11.12pm | VS-02 |
-| CH-12 | CD-04 | Inclusion of Notification/Email System Interface. Section 3.4.1 System Interfaces was updated to include integration with notification systems (e.g., SMTP or Twilio) for sending reminders and confirmations. | Tang Wei Xiong | 23/6/2025; 11.12pm | VS-02 |
+| CH-12 | CD-04 | Inclusion of Notification/Email System Interface. Section 3.4.1 System Interfaces was updated to include integration with notification systems (e.g., SMTP or Twilio) for sending reminders and confirmations. | Tang Wei Xiong | 23/6/2025; 11.12pm | VS-01 | 
+| CH-13 | DD-04 | Add consistent labels and figure numbers for clarity. | Tang Wei Xiong | 23/6/2025; 11.27pm | VS-04 | 
 
 ### **3.8.10 Requirements Traceability Matrix**
 
