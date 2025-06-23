@@ -341,13 +341,13 @@ Students are the primary users who attend events, check in, and make payments wh
 ![3 1 1 3](https://github.com/user-attachments/assets/f40a1fac-9824-409c-aa36-4f778efcc9d7)
 #### **3.1.2.3 Give Feedback sequence diagram**
 
-#### **3.1.2.4 View Ongoing Events**
+#### **3.1.2.4 View Ongoing Event**
 
 - **Function:** Browse or search for currently active or upcoming events.
 - **Explanation:** Keeps students informed about available events and their details.
 
 ![3 1 1 4](https://github.com/user-attachments/assets/8e6def91-1d69-4e87-8b26-290c70547f72)
-#### **3.1.2.4 View Ongoing Events sequence diagram**
+#### **3.1.2.4 View Ongoing Event sequence diagram**
 
 ### **3.1.3 Event Organizer**
 
@@ -369,13 +369,13 @@ Event Organizers are responsible for creating events, monitoring attendance, and
 ![image](https://github.com/user-attachments/assets/5da72cf2-05e2-4170-8428-8c937d076710)
 #### **3.1.3.2 Generate payment receipt sequence diagram**
 
-#### **3.1.3.3 Manage events**
+#### **3.1.3.3 Manage event**
 
 - **Function**: Allows Event Organizers to create, edit, and delete events in the system through the dashboard.
 - **Explanation**: Organizers can add new event details, make changes to existing events (such as updating the date, time, or location), or remove events that are no longer needed.
 
 ![image](https://github.com/user-attachments/assets/38182de9-f6ea-4b08-bb33-90bf552b0cc1)
-#### **3.1.3.3 Manage events sequence diagram**
+#### **3.1.3.3 Manage event sequence diagram**
 
 #### **3.1.3.4 Generate attendance report**
 
@@ -413,13 +413,13 @@ Administrators manage the system backend, reporting, and user roles. Administrat
 ![3 1 3 2](https://github.com/user-attachments/assets/d810cabb-aef2-446a-b36d-a4a7d130be5c)
 #### **3.1.4.1 Manage user access sequence diagram**
 
-#### **3.1.4.2 Manage activity logs**
+#### **3.1.4.2 Manage activity log**
 
 - **Function:** View logs of user actions across the system.
 - **Explanation:** Monitor security, detect misuse, and support audits.
 
 ![3 1 3 3](https://github.com/user-attachments/assets/eefa32e5-ccac-4214-8edd-3257d60c65b4)
-#### **3.1.4.2 Manage activity logs sequence diagram**
+#### **3.1.4.2 Manage activity log sequence diagram**
 
 ### **3.1.4 Summary Table**
 
@@ -428,15 +428,15 @@ Administrators manage the system backend, reporting, and user roles. Administrat
 | Student         | Check-in                   | Check into events with Student ID                       | Check-in               |
 |                 | Make Payment               | Make payments for paid events                           | Make Payment           |
 |                 | Give Feedback              | Submit feedback for attended events                     | Give Feedback          |
-|                 | View Ongoing Events        | Browse or search for current/upcoming events            | View Ongoing Events    |
+|                 | View Ongoing Event        | Browse or search for current/upcoming events            | View Ongoing Events    |
 | Event Organizer | Monitor Attendance         | View real-time check-ins                                | Monitor Attendance     |
 |                 | Generate Payment Receipt   | Create payment receipts based on completed transactions | Generate Payment Receipt |
-|                 | Manage Events              | Create and manage event details                         | Manage Events          |
+|                 | Manage Event              | Create and manage event details                         | Manage Events          |
 |                 | Generate Attendance Report | Export attendance summaries for events                  | Generate Attendance Report |
 |                 | View Payment Record        | Generate financial summary for event payments           | View Payment Record    |
 |                 | View Feedback              | Read feedback submitted by students                     | View Feedback          |
 | Administrator   | Manage User Access         | View, add, edit, or remove user accounts and assign roles | Manage User Access     |
-|                 | Manage Activity Logs       | View logs of user actions for security and audit        | Manage Activity Logs   |
+|                 | Manage Activity Log       | View logs of user actions for security and audit        | Manage Activity Logs   |
 
 
 
@@ -884,8 +884,12 @@ The following packaging and security instructions **are part of the deployment r
 
 | **RTM ID** | **Requirement Description** | **Linked Goal(s)** | **Feature(s)** | **Use Case(s)** | **Traceability Score (1-4)** |
 | --- | --- | --- | --- | --- | --- |
-| RTM-01 | Scalability Requirements | G1  | F1  | UC-01 | 1   |
-| RTM-02 | Availability Requirements | G1  | F1  | UC-01 | 1   |
+| RTM-01 | System shall respond to check-in within 2 seconds | G1,G3  | F2,F11  | UC-02 | 4   |
+| RTM-02 | The system shall respond to payment confirmation operations within 3 seconds | G1,G3  | F4,F12  | UC-04 | 4   |
+| RTM-03 | The dashboard used by event organizers shall load attendance statistics within 5 seconds | G1,G2  | F5  | UC-05 | 4   |
+| RTM-04 | Administrative reporting queries shall generate summary reports within 10 seconds  | G2  | F7  | UC-07 | 3   |
+| RTM-05 | System shall handle at least 10 check-ins per second during busy events  | G1  | F2,F11  | UC-02 | 4   |
+| RTM-06 | System shall process 5 payments per second during peak time without errors  | G1,G3  | F4,F12  | UC-04 | 4   |
 
 ### **3.8.11 Role in Requirements Validation, Negotiation & Management**
 
