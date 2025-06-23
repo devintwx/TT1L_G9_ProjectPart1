@@ -865,7 +865,10 @@ The following packaging and security instructions **are part of the deployment r
 
 | **Conflict ID** | **Conflict Resolution Strategy** | **Resolved (Y/N)** | **Outcome (If Resolved)** | **Justification** |
 | --- | --- | --- | --- | --- |
-| e.g. CF-01 | Structured negotiation facilitated by the Scrum Master, including trade-off analysis and review of stakeholder priorities. A consensus was built by demonstrating long-term ROI of better performance. | Y   | Agreement reached to prioritize performance, with acceptable cost adjustments approved by the PO. | The resolution process considered stakeholder goals and project constraints, resulting in a sustainable and well-justified agreement. |
+| CF-01 | Dual-mode operation introduced: system defaults to real-time but stores check-ins locally for sync when online. | Y   | Check-ins are now supported offline, reducing dependency on network without losing data integrity. | Balanced accessibility and reliability concerns through technical implementation. |
+| CF-02 | 	Anonymization and role-based access controls were added to reporting module. Only summary or pseudonymized data is shown to event organizers. | Y   | Reporting remains informative without exposing personal identifiers. | Legal compliance maintained while fulfilling organizer needs. |
+| CF-03 | 	Feedback documented for future updates. Current scope retains university gateway but includes feature toggle design for future wallet support. | N   | Feature deferred; documented as a roadmap item post MVP. | Limited by current policy, but resolution allows for modular expansion. |
+
 
 ### **3.8.9 Change Log**
 
